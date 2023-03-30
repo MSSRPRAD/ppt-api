@@ -1,0 +1,23 @@
+
+
+{
+"title": "Technical and Ethical Advantages of Linux vs Windows",
+"slides": [
+  {
+    "title": "Technical Advantages",
+    "content": [
+      "Linux is more stable and secure.",
+      "Linux can be customized to a greater extent.",
+      "Linux provides better performance."
+    ]
+  },
+  {
+    "title": "Ethical Advantages",
+    "content": [
+      "Linux is free and open source.",
+      "Linux does not spy on its users.",
+      "Linux does not have a history of security vulnerabilities."
+    ]
+  }
+]
+}
