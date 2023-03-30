@@ -46,4 +46,4 @@ def ppt(username):
 
 
 
-    prs.save("./ppt-api/"+username+str('.pptx'))
+    prs.save("./"+username+str('.pptx'))
