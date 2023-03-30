@@ -123,7 +123,7 @@ def create():
         db.session.add(req)
         db.session.commit()
         ppt.ppt(current_user.username)
-        path = "./"+current_user.username+".pptx"
+        path = current_user.username+".pptx"
         return send_file(path, as_attachment=True)
     return "THERE WAS AN ERROR WHILE ADDING THE TASK!"
 
