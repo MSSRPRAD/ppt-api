@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="bg-gray-200 h-screen">
+    <h1><div style="text-align: center;"><b>DASHBOARD</b></div></h1>
+    <div class="container mx-auto w-full h-full">
+      <div class="max-w-screen-sm mx-auto w-full h-full flex flex-col items-center justify-center">
+           <form action="/dashboard/create" method="POST">
+               <textarea id="content" name="content" rows="4" cols="50">Make a ppt with around 10 slides on the advantages of shifting to Linux for technical audience. Make it detailed and complex</textarea>
+               <p><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Generate the PPT
+              </button></p>
+           </form>
+          <br><br><br><br>
+          <a href="/logout"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Logout
+          </button></a>
+          <br>
+          <a href="/delete/user"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Delete Account
+          </button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}
