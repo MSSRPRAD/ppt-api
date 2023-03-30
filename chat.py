@@ -4,7 +4,7 @@ import json
 import re
 
 # set your OpenAI API key
-openai.api_key = os.environ["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"]
+openai.api_key = "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"
 def chat(req, username):
     # define the prompt for the text generation
     s2 = " Answer should be as a valid json object with this structure: 1) 'title' field representing title of ppt 2) 'slides' field representing array of slides 3) Each 'slide' having: 'title', 'content' fields. Also, 'content' is a list of strings representing points each not having more than 20 words. Double Check that output is a valid json and that the number of slides is correct."
