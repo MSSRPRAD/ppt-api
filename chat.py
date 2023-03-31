@@ -4,7 +4,7 @@ import json
 import re
 
 # set your OpenAI API key
-openai.api_key = "sk-"
+openai.api_key = ""
 def chat(req, username):
     # define the prompt for the text generation
     s2 = " Answer should be as a valid json object with this structure: 1) 'title' field representing title of ppt 2) 'slides' field representing array of slides 3) Each 'slide' having: 'title', 'content' fields. Also, 'content' is a list of strings representing points each not having more than 20 words. Double Check that output is a valid json and that the number of slides is correct."
@@ -38,11 +38,11 @@ def chat(req, username):
     output = re.sub(r'^.*?{', '{', result)
 
     # Save the JSON data string to a file
-    with open(username+"ppt.json", "w") as json_file:
+    with open("ppt-api/"+username+"ppt.json", "w") as json_file:
         json_file.write(output)
 
 
-    with open(username+"ppt.json", "r") as f:
+    with open("ppt-api/"+username+"ppt.json", "r") as f:
         # Read the lines of the file into a list
         lines = f.readlines()
 
@@ -59,7 +59,7 @@ def chat(req, username):
             lines[i]=""
 
     # Write the updated lines to a new file
-    with open(username+"ppt1.json", "w") as f:
+    with open("ppt-api/"+username+"ppt1.json", "w") as f:
         f.writelines(lines)
 
     return output

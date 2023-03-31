@@ -7,7 +7,7 @@ def ppt(username):
     prs = Presentation()
 
     # Read the JSON object from a file
-    with open(username+"ppt1.json", 'r') as f:
+    with open("ppt-api/"+username+"ppt1.json", 'r') as f:
         ppt = json.load(f)
 
     # Extract the title and slides fields from the JSON object
@@ -46,4 +46,4 @@ def ppt(username):
 
 
 
-    prs.save("./"+username+str('.pptx'))
+    prs.save("ppt-api/"+username+str('.pptx'))
