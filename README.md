@@ -1,7 +1,7 @@
 # PPT maker using ChatGPT
 
 ### EDIT:
-My free Open AI API token expired the first of this month before I could improve on the app. So, I will not be working on this anymore for quite some time.
+My free Open AI API token expired the first of this month when I had just started working on the app. As a result, I will not be working on this anymore for quite some time.
 
 ## Goal
 
